@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:screenOrientation="portrait">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="About:"
+            android:id="@+id/textView2"
+            android:textSize="50dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mr.Lovenstein Borwser is a free app for viewing Mr.Lovenstein Comics (http://www.mrlovenstein.com/).  A network connection is required because this app does not save images to the phone.  This app is not affiliated in any way with Mr.Lovenstein.  All images are property of their respective owners."
+            android:id="@+id/textView"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check out our other app, Megatokyo Comic Viewer!!"
+            android:id="@+id/button" android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"/>
+
+</LinearLayout>

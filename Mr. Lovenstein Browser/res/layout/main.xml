@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:screenOrientation="portrait"
+              android:clickable="true"
+              android:focusable="true"
+              android:id="@+id/big"
+        >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/pic"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:clickable="true"
+            >
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+
+
+
+    </RelativeLayout>
+    <com.startapp.android.publish.banner.Banner
+            android:id="@+id/startAppBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/pic"
+            >
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first"
+                android:id="@+id/first"
+                android:layout_weight=".2"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prev"
+                android:id="@+id/prev"
+                android:layout_alignParentTop="true" android:layout_toRightOf="@+id/first"
+                android:layout_weight=".2"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rand"
+                android:id="@+id/rand"
+                android:layout_alignParentTop="true" android:layout_toRightOf="@+id/prev"
+                android:layout_weight=".2"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:id="@+id/next"
+                android:layout_alignParentTop="true" android:layout_toRightOf="@+id/rand"
+                android:layout_weight=".2"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last"
+                android:id="@+id/last"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/next"
+                android:layout_weight=".2"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
